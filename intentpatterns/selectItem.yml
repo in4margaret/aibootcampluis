@@ -1,0 +1,19 @@
+token_patterns:
+  - dynamic:
+    - DirectionalReference
+  - static:
+    - SELECT:
+      - [[ select ]]
+    - SHOW:
+      - [[show, display, choose]]
+    - ME:
+      - [[me]]
+    - THE:
+      - [[the]]
+
+entities: [DirectionalReference]
+
+utterance_patterns:
+  - SelectItem:
+    - [DirectionalReference]
+    - [SHOW, (|ME), THE, DirectionalReference]

@@ -1,0 +1,14 @@
+token_patterns:
+  - static:
+    - NEED:
+      - [[I need, I want, need]]
+    - HELP:
+      - [[help,assist]]
+    - SOME:
+      - [[some]]
+    - PLEASE:
+      - [[please]]
+
+utterance_patterns:
+  - Help:
+    - [(|PLEASE), NEED, (|SOME), HELP]
